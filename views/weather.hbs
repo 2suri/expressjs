@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--   aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+     
+    <title>weather-app</title>
+</head>
+
+<body>
+    {{>nav}}
+
+<!--end of nav part -->
+
+<header>
+    <div class="main_header container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+<!--                   left side div -->
+                    <div class="col-12 col-md-6 left_side">
+                        <h4 data-aos="fade-in"> Welcome To The Website</h4>
+                        <h1 class="left_h1" data-aos="flip-up"> Get The Latest <span id="wet">Weather </span>  Info of Your City </h1>
+                        <button class="btn bg-dark"> ---></button>
+                    </div>
+<!--                    right side div-->
+                    <div class="col-12 col-md-6 right_side aligh-items-center">
+                        
+<!--                        <img  class="img-fluid img1" src="pics/we.png" data-aos="slide-left">-->
+                       
+                       <div class="container mx-auto">
+                           <div class="row">
+                               <div class="col-sm-10 col-6">
+                                   <div class="input_1">
+                                       <input type="text" placeholder="enter the city name" id="cityname" class="px-auto in">
+                                       
+                                       <button class="btn2 px-auto" id="submitbtn"> Search </button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="container col-10">
+                           <div class="content">
+                               <h5 id="city_name">CITY NAME 😄</h5>  
+                               <h6 id="temp"> ______</h6>
+
+                               <p id="stats"></p>
+                           </div>
+                       </div>
+                        <h1 class="right_h1 mx-auto"  data-aos="fade-up">  WEATHER CONDITION </h1>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    
+    {{>footer}}
+<script src="js/main.js"></script>
+</body>
+
+</html>
